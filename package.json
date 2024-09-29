@@ -5,7 +5,8 @@
   "type": "commonjs",
   "main": "src/main.jsx",
   "scripts": {
-    "heroku-postbuild": "npm install --force && npm run build",
+    "postinstall": "npm install --force",
+    "heroku-postbuild": "npm run build",
     "dev": "vite --host",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "start": "node server.js",
@@ -16,8 +17,8 @@
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
-    "@mantine/carousel": "^6.0.20",
-    "@mantine/core": "^6.0.19",
+    "@mantine/core": "^6.0.20",
+  "@mantine/carousel": "^6.0.20",
     "@mantine/form": "^6.0.20",
     "@mantine/hooks": "^6.0.19",
     "@mantine/modals": "^6.0.19",
