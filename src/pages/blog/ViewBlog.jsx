@@ -2,7 +2,7 @@ import { Box, Flex, Image, Text, Title } from "@mantine/core";
 import React from "react";
 import { useLocation, useParams } from "react-router-dom";
 import { useStyles } from "./styles";
-import ReactHtmlParser from "react-html-parser";
+import parse from 'html-react-parser';
 import { useMediaQuery } from "@mantine/hooks";
 import { useQuery } from "react-query";
 import axios from "axios";
@@ -42,7 +42,7 @@ const ViewBlog = () => {
         align={"flex-start"}
         direction={isMobile ? "column-reverse" : "row"}
       >
-        <Text align="justify">{ReactHtmlParser(blogData?.details)}</Text>
+        <Text align="justify">{parse(blogData?.details)}</Text>
         <Image src={blogData?.image} width={isMobile ? "100%" : 400} />
       </Flex>
     </Box>

@@ -10,15 +10,15 @@
     "dev": "vite --host",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "start": "node server.js",
-  "build": "vite build"
+    "build": "vite build"
   },
   "engines": {
     "node": "18.x"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
+    "@mantine/carousel": "^6.0.20",
     "@mantine/core": "^6.0.20",
-  "@mantine/carousel": "^6.0.20",
     "@mantine/form": "^6.0.20",
     "@mantine/hooks": "^6.0.20",
     "@mantine/modals": "^6.0.20",
@@ -28,11 +28,11 @@
     "embla-carousel-autoplay": "^8.0.0-rc14",
     "embla-carousel-react": "^7.1.0",
     "firebase": "^10.4.0",
+    "html-react-parser": "^5.1.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-facebook-pixel": "^1.0.4",
     "react-hot-toast": "^2.4.1",
-    "react-html-parser": "^2.0.2",
     "react-img-zoom": "^0.1.0",
     "react-query": "^3.39.3",
     "react-router-dom": "^6.15.0",

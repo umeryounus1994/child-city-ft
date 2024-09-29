@@ -1,7 +1,7 @@
 import { Image, Stack, Text, useMantineTheme } from "@mantine/core";
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import ReactHtmlParser from "react-html-parser";
+
 
 const BlogCard = ({ obj, ind }) => {
   const theme = useMantineTheme();
